@@ -239,7 +239,7 @@ Manage Elastic Block Store (EBS) volumes with this resource.
 - `timeout` - connection timeout for EC2 API.
 - `snapshots_to_keep` - used with action `:prune` for number of snapshots to maintain.
 - `description` - used to set the description of an EBS snapshot
-- `volume_type` - "standard", "io1", or "gp2" ("standard" is magnetic, "io1" is provisioned SSD, "gp2" is general purpose SSD)
+- `disk_type` - "standard", "io1", "gp2", "st1" or "sc1" ("standard" is magnetic, "io1" is provisioned iops SSD, "gp2" is general purpose SSD, "st1" is throughput optimized HDD and "sc1" is non frequent access cold HDD)
 - `piops` - number of Provisioned IOPS to provision, must be >= 100
 - `existing_raid` - whether or not to assume the raid was previously assembled on existing volumes (default no)
 - `encrypted` - specify if the EBS should be encrypted
